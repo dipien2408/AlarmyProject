@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Alarmy_test2</string>
+    <string name="fab_description">Fab Description</string>
 </resources>
