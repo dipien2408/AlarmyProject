@@ -23,6 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
+        android:contentDescription="@string/fab_description"
+        app:backgroundTint="@color/red"
         app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <include layout="@layout/fab_layout"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

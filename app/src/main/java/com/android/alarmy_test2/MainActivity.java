@@ -27,9 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 new HomeFragment()).commit();
 
 
-
-
     }
+
 
     private NavigationBarView.OnItemSelectedListener navListener =
             new NavigationBarView.OnItemSelectedListener() {
