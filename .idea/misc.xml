@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.22" />
+        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/drawable/ic_baseline_alarm_24.xml" value="0.22" />
+        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/font/font.xml" value="0.24322916666666666" />
+        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/activity_all_alarms.xml" value="0.264" />
+        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/activity_all_alarms_card_vew.xml" value="0.264" />
         <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/activity_main.xml" value="0.21302083333333333" />
-        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/card_view.xml" value="0.21302083333333333" />
+        <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/fragment_news.xml" value="0.21302083333333333" />
         <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/fragment_record.xml" value="0.21302083333333333" />
         <entry key="..\:/Save/Android/Alarmy_test2/app/src/main/res/layout/fragment_setting.xml" value="0.21302083333333333" />
