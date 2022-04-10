@@ -3,7 +3,7 @@
     <string name="next_alarm">Báo thức tiếp theo</string>
     <string name="alarm_date">Các ngày làm việc</string>
     <string name="no_alarm_on">Không có báo thức sắp tới</string>
-    <string name="alarm">Báo thúc</string>
+    <string name="alarm">Báo thức</string>
     <string name="fast_alarm">Báo thức nhanh</string>
     <string name="example_alarm_clock">6:30</string>
     <string name="alarm_label">Tôi không nên...</string>
