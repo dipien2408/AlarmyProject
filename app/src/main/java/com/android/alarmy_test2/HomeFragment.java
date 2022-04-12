@@ -1,6 +1,7 @@
 package com.android.alarmy_test2;
 
 import android.os.Bundle;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +20,6 @@ public class HomeFragment extends Fragment {
 
     private FloatingActionButton mMainAddFab, mAddNormalFab, mAddFastFab;
     private TextView mAddNormalText, mAddFastText;
-
     private Animation mFabOpenAnim, mFabCloseAnim;
 
     private boolean isOpen;
@@ -50,7 +50,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Toast.makeText(HomeFragment.this.getActivity(), "fab1", Toast.LENGTH_SHORT).show();
                 if(isOpen){
-
+                    mMainAddFab.setImageResource(R.drawable.ic_baseline_add_24);
                     mAddNormalFab.setAnimation(mFabCloseAnim);
                     mAddFastFab.setAnimation(mFabCloseAnim);
 
@@ -59,7 +59,7 @@ public class HomeFragment extends Fragment {
 
                     isOpen = false;
                 } else {
-
+                    mMainAddFab.setImageResource(R.drawable.ic_baseline_close_24);
                     mAddNormalFab.setAnimation(mFabOpenAnim);
                     mAddFastFab.setAnimation(mFabOpenAnim);
 
