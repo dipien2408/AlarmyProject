@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alarmy_test2">
         <activity
+            android:name=".AddAlarm"
+            android:exported="false" />
+        <activity
             android:name=".AllAlarms"
             android:exported="false" />
         <activity

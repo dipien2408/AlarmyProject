@@ -14,9 +14,9 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/main_add_fab"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="88dp"
             android:layout_gravity="bottom|end"
-            android:layout_margin="32dp"
+            android:layout_margin="16dp"
 
             android:src="@drawable/ic_baseline_add_24"
 
@@ -31,9 +31,9 @@
         android:id="@+id/add_normal_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        app:fabSize="mini"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/container_layout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,9 +43,9 @@
         android:id="@+id/add_fast_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        app:fabSize="mini"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/add_normal_fab"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,7 @@
         android:id="@+id/add_normal_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/fab_text_bg"
         android:fontFamily="@font/lexend_regular"
         android:paddingStart="16dp"
@@ -64,6 +64,7 @@
         android:paddingBottom="8dp"
         android:text="@string/alarm"
         android:visibility="invisible"
+
         app:layout_constraintBottom_toBottomOf="@+id/add_normal_fab"
         app:layout_constraintEnd_toStartOf="@+id/add_normal_fab"
         app:layout_constraintTop_toTopOf="@+id/add_normal_fab" />
@@ -72,7 +73,7 @@
         android:id="@+id/add_fast_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/fab_text_bg"
         android:fontFamily="@font/lexend_regular"
         android:paddingStart="16dp"

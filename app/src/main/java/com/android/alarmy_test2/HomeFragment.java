@@ -1,14 +1,20 @@
 package com.android.alarmy_test2;
 
+import android.app.Dialog;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +46,8 @@ public class HomeFragment extends Fragment {
 
         isOpen = false;
         openClose();
+        addAlarm();
+        addFastAlarm();
 
         return v;
     }
@@ -48,7 +56,6 @@ public class HomeFragment extends Fragment {
         mMainAddFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeFragment.this.getActivity(), "fab1", Toast.LENGTH_SHORT).show();
                 if(isOpen){
                     mMainAddFab.setImageResource(R.drawable.ic_baseline_add_24);
                     mAddNormalFab.setAnimation(mFabCloseAnim);
@@ -72,4 +79,45 @@ public class HomeFragment extends Fragment {
             }
         });
     }
+
+    public void addAlarm() {
+        mAddNormalFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), AddAlarm.class));
+            }
+        });
+    }
+
+    public void addFastAlarm() {
+        mAddFastFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAddFastAlarm(Gravity.CENTER);
+            }
+        });
+    }
+
+    private void openAddFastAlarm(int gravity) {
+        final Dialog dialog = new Dialog(getContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.add_fast_alarm);
+
+        Window window = dialog.getWindow();
+        if(window == null) {
+            return;
+        }
+
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        WindowManager.LayoutParams windowAttributes = window.getAttributes();
+        windowAttributes.gravity = gravity;
+        window.setAttributes(windowAttributes);
+
+        dialog.setCancelable(true);
+
+        dialog.show();
+    }
+
 }
