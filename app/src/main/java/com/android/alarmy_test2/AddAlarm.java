@@ -15,6 +15,7 @@ public class AddAlarm extends AppCompatActivity {
     TimePicker timePicker;
     ImageView backBtn, playRingtoneBtn;
     private boolean isPlay;
+    private boolean Test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
