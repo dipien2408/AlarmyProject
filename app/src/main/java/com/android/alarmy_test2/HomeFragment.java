@@ -6,18 +6,23 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -27,7 +32,8 @@ public class HomeFragment extends Fragment {
     private FloatingActionButton mMainAddFab, mAddNormalFab, mAddFastFab;
     private TextView mAddNormalText, mAddFastText;
     private Animation mFabOpenAnim, mFabCloseAnim;
-
+    private Button mDropdownBtn;
+    private CardView mAlarmCard;
     private boolean isOpen;
     @Nullable
     @Override
@@ -44,10 +50,14 @@ public class HomeFragment extends Fragment {
         mFabOpenAnim = AnimationUtils.loadAnimation(HomeFragment.this.getActivity(), R.anim.fab_open);
         mFabCloseAnim = AnimationUtils.loadAnimation(HomeFragment.this.getActivity(), R.anim.fab_close);
 
+        mDropdownBtn = v.findViewById(R.id.outlinedButton);
+        mAlarmCard = v.findViewById(R.id.alarm_card);
         isOpen = false;
+
         openClose();
         addAlarm();
         addFastAlarm();
+        openDropdownMenu();
 
         return v;
     }
@@ -120,4 +130,19 @@ public class HomeFragment extends Fragment {
         dialog.show();
     }
 
+    private void openDropdownMenu() {
+        mDropdownBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showMenu();
+            }
+        });
+    }
+
+    private void showMenu() {
+        PopupMenu popup = new PopupMenu(getContext(), this.mAlarmCard);
+        popup.inflate(R.menu.alarm_cardview_dropdown);
+
+        popup.show();
+    }
 }

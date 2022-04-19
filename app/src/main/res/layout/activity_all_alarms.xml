@@ -18,6 +18,10 @@
         <include layout="@layout/activity_all_alarms_card_vew"/>
         <include layout="@layout/activity_all_alarms_card_vew"/>
         <include layout="@layout/activity_all_alarms_card_vew"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"/>
     </LinearLayout>
 
 </ScrollView>

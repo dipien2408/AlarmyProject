@@ -54,4 +54,16 @@
         <item name="android:minHeight">48dp</item>
     </style>
 
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/bottom_navigation_btn_color_inactive</item>
+    </style>
+
 </resources>

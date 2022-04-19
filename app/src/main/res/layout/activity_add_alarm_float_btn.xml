@@ -17,13 +17,12 @@
             android:layout_height="88dp"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
-
             android:src="@drawable/ic_baseline_add_24"
-
-            app:backgroundTint="@color/colorAccent"
             app:fabSize="normal"
             app:icon="@drawable/ic_baseline_add_24"
-            app:rippleColor="@color/colorPrimaryDark" />
+            app:backgroundTint="@color/red"
+            app:rippleColor="@color/white"
+            app:tint="@android:color/white"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -37,7 +36,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/container_layout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_baseline_alarm_24" />
+        app:backgroundTint="@color/black"
+        app:rippleColor="@color/white"
+        app:srcCompat="@drawable/ic_baseline_alarm_24"
+        app:tint="@color/home_background"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_fast_fab"
@@ -49,7 +51,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/add_normal_fab"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_baseline_alarm_24" />
+        app:backgroundTint="@color/black"
+        app:rippleColor="@color/white"
+        app:srcCompat="@drawable/ic_baseline_alarm_24"
+        app:tint="@color/home_background"/>
 
     <TextView
         android:id="@+id/add_normal_text"
@@ -64,7 +69,6 @@
         android:paddingBottom="8dp"
         android:text="@string/alarm"
         android:visibility="invisible"
-
         app:layout_constraintBottom_toBottomOf="@+id/add_normal_fab"
         app:layout_constraintEnd_toStartOf="@+id/add_normal_fab"
         app:layout_constraintTop_toTopOf="@+id/add_normal_fab" />
