@@ -114,7 +114,8 @@
                     android:text="@string/sunday"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/dayBtn"/>
+                    android:onClick="takeBtn"
+                    app:backgroundTint="@color/backgroundbtn_alarm"/>
 
                 <Button
                     android:id="@+id/mondayBtn"
@@ -126,7 +127,8 @@
                     android:text="@string/monday"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/dayBtn"/>
+                    app:backgroundTint="@color/backgroundbtn_alarm"
+                    android:onClick="takeBtn"/>
 
                 <Button
                     android:id="@+id/tuesdayBtn"
@@ -138,7 +140,9 @@
                     android:text="@string/tuesday"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/dayBtn"/>
+                    app:backgroundTint="@color/backgroundbtn_alarm"
+                    android:onClick="takeBtn"/>
+
 
                 <Button
                     android:id="@+id/wednesdayBtn"
@@ -150,7 +154,9 @@
                     android:text="@string/wednesday"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/dayBtn"/>
+                    app:backgroundTint="@color/backgroundbtn_alarm"
+                    android:onClick="takeBtn"/>
+
 
                 <Button
                     android:id="@+id/thursdayBtn"
@@ -162,7 +168,9 @@
                     android:text="@string/thursday"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/dayBtn"/>
+                    app:backgroundTint="@color/backgroundbtn_alarm"
+                    android:onClick="takeBtn"/>
+
 
                 <Button
                     android:id="@+id/fridayBtn"
@@ -174,7 +182,9 @@
                     android:text="@string/friday"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/dayBtn"/>
+                    app:backgroundTint="@color/backgroundbtn_alarm"
+                    android:onClick="takeBtn"/>
+
 
                 <Button
                     android:id="@+id/saturdayBtn"
@@ -186,11 +196,14 @@
                     android:text="@string/saturday"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/dayBtn"/>
+                    app:backgroundTint="@color/backgroundbtn_alarm"
+                    android:onClick="takeBtn"/>
+
 
             </LinearLayout>
 
             <TextView
+                android:id="@+id/timeEstimate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/add_alarm_coming_example"
@@ -561,7 +574,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="60sp"/>
+                android:textSize="60sp" />
         </LinearLayout>
     </ScrollView>
 
