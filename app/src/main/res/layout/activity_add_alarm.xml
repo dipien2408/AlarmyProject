@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddAlarm"
+    tools:context=".AddAlarm.AddAlarm"
     android:background="@color/home_background">
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -88,6 +88,7 @@
                     android:theme="@style/bold_text" />
 
                 <CheckBox
+                    android:id="@+id/daily"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"

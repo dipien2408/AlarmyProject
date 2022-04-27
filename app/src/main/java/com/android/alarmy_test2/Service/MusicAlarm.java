@@ -1,4 +1,4 @@
-package com.android.alarmy_test2;
+package com.android.alarmy_test2.Service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.os.IBinder;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
+
+import com.android.alarmy_test2.R;
 
 import java.security.Provider;
 
@@ -20,7 +22,7 @@ public class MusicAlarm extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        mediaPlayer = MediaPlayer.create(this,R.raw.baothuc);
+        mediaPlayer = MediaPlayer.create(this, R.raw.baothuc);
         mediaPlayer.start();
         Log.e("In MusicAlarm","Music Alarm is playing");
         return START_NOT_STICKY;
